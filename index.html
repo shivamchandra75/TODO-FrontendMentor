@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img
+      src="./images/bg-desktop-light.jpg"
+      alt="astheticaly pleasing image"
+      id="body-bg-image"
+      class="body-bg-image"
+    />
+
+    <div class="heading-div">
+      <h2 class="heading">TODO</h2>
+      <button class="theme-toggle-btn">
+        <img
+          src="./images/icon-moon.svg"
+          class="theme-img"
+          alt="Theme Toggle Btn"
+        />
+      </button>
+    </div>
+
+    <div class="input-div">
+      <form action="">
+        <button type="submit" class="input-div-btn"></button>
+        <input type="text" placeholder="Create a new todo..." class="input" />
+      </form>
+    </div>
+
+    <div class="list-div">
+      <ul class="todo-list container"></ul>
+
+      <div class="filter-div">
+        <li class="todo-count">0 items left</li>
+        <div class="filter-btn-container">
+          <button class="filter-all-btn fbtn active">All</button>
+          <button class="filter-active-btn fbtn">Active</button>
+          <button class="filter-completed-btn fbtn">Completed</button>
+        </div>
+        <button class="filter-clear-btn">Clear Completed</button>
+      </div>
+    </div>
+    <p class="drag-guidance">Drag and drop to reorder list</p>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
